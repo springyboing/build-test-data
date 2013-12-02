@@ -9,6 +9,7 @@ class BuildTestDataGrailsPlugin {
     def grailsVersion = "2.0.0 > *"
     def loadAfter = ['services', 'dataSource', 'hibernate', 'hibernate4', 'validation']
     def watchedResources = ["file:./grails-app/domain/**.groovy"]
+    def environments = "test"
 
     def title = "Build Test Data Plugin"
     def description = '''\
